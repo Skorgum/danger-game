@@ -1,2 +1,4 @@
-# danger-game
+# Danger Game!
+
+
 Simple text based adventure game in Python

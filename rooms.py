@@ -5,7 +5,7 @@ from deaths import random_death
 def first_room():
     print("""You have chosen Danger! Bold choice.
 The door slams behind you. You find yourself in a room with three doors, but are only marked as 'one', 'two', and 'three'.
-What door will you choose? (Type a command like 'look', help.)
+What door will you choose? (Type a command like 'look', 'help'.)
 """)
     counter = 5 # starting value will decrease with each room
 
@@ -27,14 +27,14 @@ What door will you choose? (Type a command like 'look', help.)
             else:
                 random_death()
         else:
-            print("Invalid command! Try help or ? for a list of valid commands.")
+            print("Invalid command! Try 'help' or '?' for a list of valid commands.")
             counter -= 1
     print("You have taken too long to choose so the room starts to fill with foul smelling gas. Game over small brain!")
 
 def second_room():
     print("""Congratulations big brain, you made it to the next room!
 The door slams behind you. This room is slightly larger than the one before, with 4 doors labled 'one' through 'four.
-What door will you choose? (Type a command like 'look', help.)
+What door will you choose? (Type a command like 'look', 'help'.)
 """)
     counter = 4 # starting value will decrease with each room
 
@@ -56,14 +56,14 @@ What door will you choose? (Type a command like 'look', help.)
             else:
                 random_death()
         else:
-            print("Invalid command! Try help or ? for a list of valid commands.")
+            print("Invalid command! Try 'help' or '?' for a list of valid commands.")
             counter -= 1
     print("You have taken too long to choose so the room starts to fill with foul smelling gas. Game over small brain!")
 
 def third_room():
     print("""Congratulations big brain, you made it to the next room!
 The door slams behind you. This room is even larger, this time with 5 doors labled 'one' through 'five'.
-What door will you choose? (Type a command like 'look', help.)
+What door will you choose? (Type a command like 'look', 'help'.)
 """)
     counter = 3 # starting value will decrease with each room
 
@@ -85,14 +85,14 @@ What door will you choose? (Type a command like 'look', help.)
             else:
                 random_death()
         else:
-            print("Invalid command! Try help or ? for a list of valid commands.")
+            print("Invalid command! Try 'help' or '?' for a list of valid commands.")
             counter -= 1
     print("You have taken too long to choose so the room starts to fill with foul smelling gas. Game over small brain!")
 
 def final_room():
     print("""Congratulations big brain, you made it to the final room!
 The door slams behind you. This room is quite large, tnow with 6 doors labled 'one' through 'six'.
-What door will you choose? (Type a command like 'look', help.)
+What door will you choose? (Type a command like 'look', 'help'.)
 """)
     counter = 2 # starting value will decrease with each room
 
@@ -114,14 +114,14 @@ What door will you choose? (Type a command like 'look', help.)
             else:
                 random_death()
         else:
-            print("Invalid command! Try help or ? for a list of valid commands.")
+            print("Invalid command! Try 'help' or '?' for a list of valid commands.")
             counter -= 1
     print("You have taken too long to choose so the room starts to fill with foul smelling gas. Game over small brain!")
 
 def real_final_room():
     print("""Congratulations!! You have arrived at the treasure room!
 The door slams behind you. This room is huge, with 7 chests labled 'one' through 'seven'.
-What chest do you want to open? (Type a command like 'look', help.)
+What chest do you want to open? (Type a command like 'look', 'help'.)
 """)
     counter = 1 # starting value will decrease with each room
     while counter != 0:
@@ -137,6 +137,6 @@ What chest do you want to open? (Type a command like 'look', help.)
             print("Oh no! The chest was booby trapped! Game over small brain!")
             sys.exit()
         else:
-            print("Invalid command! Try help or ? for a list of valid commands.")
+            print("Invalid command! Try 'help' or '?' for a list of valid commands.")
             counter -= 1
     print("You have taken too long to choose so the room starts to fill with foul smelling gas. Game over small brain!")

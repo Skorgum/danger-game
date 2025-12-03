@@ -1,5 +1,6 @@
 import sys
-
+import random
+from deaths import random_death
 # TODO: Complete the room's description and commands. Number of wrong options will increase with each room.
 def first_room():
     print("""You have chosen Danger! Bold choice.
@@ -7,6 +8,9 @@ The door slams behind you. You find yourself in a room with three doors, but are
 What door will you choose? (Type a command like 'look', help.)
 """)
     counter = 5 # starting value will decrease with each room
+
+    correct_door = random.choice(["one", "two", "three"])
+
     while counter != 0:
         command = input("enter a command> ").lower()
 
@@ -16,15 +20,12 @@ What door will you choose? (Type a command like 'look', help.)
         elif command == "look":
             counter -= 1
             print("There are three doors in front of you labled 'one', 'two', and 'three'.")
-        elif command == "one":
-            print("The door was booby-trapped with a 12 gauge shotgun that blows your head off! Game over small brain!")
-            sys.exit()
-        elif command == "two":
-            print("You step through door two and onto a metal grate. The door slams behind you and you are immediately engulfed in flames! Game over small brain!")
-            sys.exit()
-        elif command == "three":
-            second_room() # go to the next room
-            return
+        elif command in ("one", "two", "three"):
+            if command == correct_door:
+                second_room()
+                return
+            else:
+                random_death()
         else:
             print("Invalid command! Try help or ? for a list of valid commands.")
             counter -= 1
@@ -36,27 +37,24 @@ The door slams behind you. This room is slightly larger than the one before, wit
 What door will you choose? (Type a command like 'look', help.)
 """)
     counter = 4 # starting value will decrease with each room
+
+    correct_door = random.choice(["one", "two", "three", "four"])
+
     while counter != 0:
         command = input("enter a command> ").lower()
 
         if command in ("help", "?"):
             # 3 wrong options in this room
-            print("Commands: 'one', 'two', 'three', 'four' 'look', and 'help'")
+            print("Commands: 'one', 'two', 'three', 'four', 'look', and 'help'")
         elif command == "look":
             counter -= 1
             print("There are four doors in front of you labled 'one' through 'four'.")
-        elif command == "one":
-            print("As soon as you open the door, a pack of rabid wolves tears you apart! Game over small brain!")
-            sys.exit()
-        elif command == "two":
-            third_room() # go to the next room
-            return
-        elif command == "three":
-            print("As soon as you step through the door, you are impaled by a spike trap! Game over small brain!")
-            sys.exit()
-        elif command == "four":
-            print("You step through the door and it slams behind you. The room gets suddenly really cold! You desperately try in vein to open the sealed door before passing out from hypothermia. Game over small brain!")
-            sys.exit()
+        elif command in ("one", "two", "three", "four"):
+            if command == correct_door:
+                third_room()
+                return
+            else:
+                random_death()
         else:
             print("Invalid command! Try help or ? for a list of valid commands.")
             counter -= 1
@@ -68,30 +66,24 @@ The door slams behind you. This room is even larger, this time with 5 doors labl
 What door will you choose? (Type a command like 'look', help.)
 """)
     counter = 3 # starting value will decrease with each room
+
+    correct_door = random.choice(["one", "two", "three", "four", "five"])
+
     while counter != 0:
         command = input("enter a command> ").lower()
 
         if command in ("help", "?"):
             # 4 wrong options in this room
-            print("Commands: 'one', 'two', 'three', 'four', 'five' 'look', and 'help'")
+            print("Commands: 'one', 'two', 'three', 'four', 'five', 'look', and 'help'")
         elif command == "look":
             counter -= 1
             print("There are five doors in front of you labled 'one' through 'five'.")
-        elif command == "one":
-            print("You step through door two and onto a metal grate. The door slams behind you and you are immediately engulfed in flames! Game over small brain!")
-            sys.exit()
-        elif command == "two":
-            print("The door was booby-trapped with a 12 gauge shotgun that blows your head off! Game over small brain!")
-            sys.exit()
-        elif command == "three":
-            print("As soon as you step through the door, you are impaled by a spike trap! Game over small brain!")
-            sys.exit()
-        elif command == "four":
-            final_room() # go to the next room
-            return
-        elif command == "five":
-            print("As soon as you open the door, a pack of rabid wolves tears you apart! Game over small brain!")
-            sys.exit()
+        elif command in ("one", "two", "three", "four", "five"):
+            if command == correct_door:
+                final_room()
+                return
+            else:
+                random_death()
         else:
             print("Invalid command! Try help or ? for a list of valid commands.")
             counter -= 1
@@ -103,6 +95,9 @@ The door slams behind you. This room is quite large, tnow with 6 doors labled 'o
 What door will you choose? (Type a command like 'look', help.)
 """)
     counter = 2 # starting value will decrease with each room
+
+    correct_door = random.choice(["one", "two", "three", "four", "five", "six"])
+
     while counter != 0:
         command = input("enter a command> ").lower()
 
@@ -112,24 +107,12 @@ What door will you choose? (Type a command like 'look', help.)
         elif command == "look":
             counter -= 1
             print("There are six doors in front of you labled 'one' through 'six'.")
-        elif command == "one":
-            print("You step through the door and it slams behind you. The room gets suddenly really cold! You desperately try in vein to open the sealed door before passing out from hypothermia. Game over small brain!")
-            sys.exit()
-        elif command == "two":
-            print("The door was booby-trapped with a 12 gauge shotgun that blows your head off! Game over small brain!")
-            sys.exit()
-        elif command == "three":
-            print("You step through door two and onto a metal grate. The door slams behind you and you are immediately engulfed in flames! Game over small brain!")
-            sys.exit()
-        elif command == "four":
-            print("As soon as you open the door, a pack of rabid wolves tears you apart! Game over small brain!")
-            sys.exit()
-        elif command == "five":
-            print("The door was electrified! Your head catches fire immediately as 50k volts rush through your body! Game over small brain!")
-            sys.exit()
-        elif command == "six":
-            real_final_room() # go to the next room
-            return
+        elif command in ("one", "two", "three", "four", "five", "six"):
+            if command == correct_door:
+                real_final_room()
+                return
+            else:
+                random_death()
         else:
             print("Invalid command! Try help or ? for a list of valid commands.")
             counter -= 1
@@ -150,25 +133,7 @@ What chest do you want to open? (Type a command like 'look', help.)
         elif command == "look":
             counter -= 1
             print("There are seven chests in front of you labled 'one' through 'seven'.")
-        elif command == "one":
-            print("Oh no! The chest was booby trapped! Game over small brain!")
-            sys.exit()
-        elif command == "two":
-            print("Oh no! The chest was booby trapped! Game over small brain!")
-            sys.exit()
-        elif command == "three":
-            print("Oh no! The chest was booby trapped! Game over small brain!")
-            sys.exit()
-        elif command == "four":
-            print("Oh no! The chest was booby trapped! Game over small brain!")
-            sys.exit()
-        elif command == "five":
-            print("Oh no! The chest was booby trapped! Game over small brain!")
-            sys.exit()
-        elif command == "six":
-            print("Oh no! The chest was booby trapped! Game over small brain!")
-            sys.exit()
-        elif command == "seven":
+        elif command in ("one", "two", "three", "four", "five", "six", "seven"):
             print("Oh no! The chest was booby trapped! Game over small brain!")
             sys.exit()
         else:

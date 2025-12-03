@@ -5,7 +5,7 @@ def main():
     print('''       WELCOME TO DANGER GAME!
 You are in an empty room with two doors.
 One is marked "Exit" and the other "Danger".
-What door will you choose? (Type a command like 'exit', 'danger', 'look', 'help'.)
+What door will you choose? (Type a command like 'exit', 'danger', 'look', or 'help'.)
 ''')
     counter = 5
     while counter != 0:

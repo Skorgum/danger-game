@@ -5,7 +5,7 @@ from deaths import random_death
 def first_room():
     print("""You have chosen Danger! Bold choice.
 The door slams behind you. You find yourself in a room with three doors, but are only marked as 'one', 'two', and 'three'.
-What door will you choose? (Type a command like 'look', 'help'.)
+What door will you choose? (Type your door choice or a command like 'look' or 'help'.)
 """)
     counter = 5 # starting value will decrease with each room
 
@@ -34,7 +34,7 @@ What door will you choose? (Type a command like 'look', 'help'.)
 def second_room():
     print("""Congratulations big brain, you made it to the next room!
 The door slams behind you. This room is slightly larger than the one before, with 4 doors labled 'one' through 'four.
-What door will you choose? (Type a command like 'look', 'help'.)
+What door will you choose? (Type your door choice or a command like 'look' or 'help'.)
 """)
     counter = 4 # starting value will decrease with each room
 
@@ -63,7 +63,7 @@ What door will you choose? (Type a command like 'look', 'help'.)
 def third_room():
     print("""Congratulations big brain, you made it to the next room!
 The door slams behind you. This room is even larger, this time with 5 doors labled 'one' through 'five'.
-What door will you choose? (Type a command like 'look', 'help'.)
+What door will you choose? (Type your door choice or a command like 'look' or 'help'.)
 """)
     counter = 3 # starting value will decrease with each room
 
@@ -92,7 +92,7 @@ What door will you choose? (Type a command like 'look', 'help'.)
 def final_room():
     print("""Congratulations big brain, you made it to the final room!
 The door slams behind you. This room is quite large, tnow with 6 doors labled 'one' through 'six'.
-What door will you choose? (Type a command like 'look', 'help'.)
+What door will you choose? (Type your door choice or a command like 'look' or 'help'.)
 """)
     counter = 2 # starting value will decrease with each room
 
@@ -121,7 +121,7 @@ What door will you choose? (Type a command like 'look', 'help'.)
 def real_final_room():
     print("""Congratulations!! You have arrived at the treasure room!
 The door slams behind you. This room is huge, with 7 chests labled 'one' through 'seven'.
-What chest do you want to open? (Type a command like 'look', 'help'.)
+What chest will you choose? (Type your chest choice or a command like 'look' or 'help'.)
 """)
     counter = 1 # starting value will decrease with each room
     while counter != 0:

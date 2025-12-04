@@ -26,6 +26,7 @@ What door will you choose? (Type your door choice or a command like 'look' or 'h
                 return
             else:
                 random_death()
+                return "dead"
         else:
             print("Invalid command! Try help or ? for a list of valid commands.")
             counter -= 1
@@ -55,6 +56,7 @@ What door will you choose? (Type your door choice or a command like 'look' or 'h
                 return
             else:
                 random_death()
+                return "dead"
         else:
             print("Invalid command! Try help or ? for a list of valid commands.")
             counter -= 1
@@ -84,6 +86,7 @@ What door will you choose? (Type your door choice or a command like 'look' or 'h
                 return
             else:
                 random_death()
+                return "dead"
         else:
             print("Invalid command! Try help or ? for a list of valid commands.")
             counter -= 1
@@ -113,6 +116,7 @@ What door will you choose? (Type your door choice or a command like 'look' or 'h
                 return
             else:
                 random_death()
+                return "dead"
         else:
             print("Invalid command! Try help or ? for a list of valid commands.")
             counter -= 1
@@ -135,7 +139,7 @@ What chest will you choose? (Type your chest choice or a command like 'look' or 
             print("There are seven chests in front of you labled 'one' through 'seven'.")
         elif command in ("one", "two", "three", "four", "five", "six", "seven"):
             print("Oh no! The chest was booby trapped! Game over small brain!")
-            sys.exit()
+            return "dead"
         else:
             print("Invalid command! Try help or ? for a list of valid commands.")
             counter -= 1

@@ -1,4 +1,3 @@
-import sys
 import random
 
 DEATH_MESSAGES = [
@@ -11,4 +10,3 @@ DEATH_MESSAGES = [
 
 def random_death():
     print(random.choice(DEATH_MESSAGES))
-    sys.exit()

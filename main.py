@@ -28,4 +28,7 @@ What door will you choose? (Type a command like 'exit', 'danger', 'look', or 'he
     print("You have taken too long to choose so the room starts to fill with foul smelling gas. Game over small brain!")
     
 if __name__ == "__main__":
-    main()
+    while True:
+        outcome = main()
+        if outcome is "dead":
+            break

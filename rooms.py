@@ -35,7 +35,7 @@ What door will you choose? (Type your door choice or a command like 'look' or 'h
                 random_death()
                 return "dead", time_limit
         else:
-            print("Invalid command! Try help or ? for a list of valid commands.")
+            print("Invalid command! Try 'help' or '?' for a list of valid commands.")
 
 def second_room(time_limit):
     print("""Congratulations big brain, you made it to the next room!
@@ -70,7 +70,7 @@ What door will you choose? (Type your door choice or a command like 'look' or 'h
                 random_death()
                 return "dead", time_limit
         else:
-            print("Invalid command! Try help or ? for a list of valid commands.")
+            print("Invalid command! Try 'help' or '?' for a list of valid commands.")
 
 def third_room(time_limit):
     print("""Congratulations big brain, you made it to the next room!
@@ -105,7 +105,7 @@ What door will you choose? (Type your door choice or a command like 'look' or 'h
                 random_death()
                 return "dead", time_limit
         else:
-            print("Invalid command! Try help or ? for a list of valid commands.")
+            print("Invalid command! Try 'help' or '?' for a list of valid commands.")
 
 def final_room(time_limit):
     print("""Congratulations big brain, you made it to the final room!
@@ -140,7 +140,7 @@ What door will you choose? (Type your door choice or a command like 'look' or 'h
                 random_death()
                 return "dead", time_limit
         else:
-            print("Invalid command! Try help or ? for a list of valid commands.")
+            print("Invalid command! Try 'help' or '?' for a list of valid commands.")
 
 def real_final_room(time_limit):
     print("""Congratulations!! You have arrived at the treasure room!
@@ -168,4 +168,4 @@ What chest will you choose? (Type your chest choice or a command like 'look' or 
             print("Oh no! The chest was booby trapped! Game over small brain!")
             return "dead", time_limit
         else:
-            print("Invalid command! Try help or ? for a list of valid commands.")
+            print("Invalid command! Try 'help' or '?' for a list of valid commands.")

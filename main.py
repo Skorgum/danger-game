@@ -13,7 +13,7 @@ What door will you choose? (Type a command like 'exit', 'danger', 'look', or 'he
         print(f"(You have {time_limit:.0f} seconds to choose.)")
 
         start = time.time()
-        command = input("enter a command> ").lower()
+        command = input("enter a command> ").strip().lower()
         elapsed = time.time() - start
 
         if elapsed > time_limit:
@@ -40,5 +40,6 @@ if __name__ == "__main__":
     while True:
         outcome, time_limit = main(time_limit)
         if outcome == "dead":
+            print("\nRestarting the game...\n")
             time_limit = 10
             continue

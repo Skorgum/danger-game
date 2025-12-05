@@ -14,7 +14,7 @@ What door will you choose? (Type your door choice or a command like 'look' or 'h
         print(f"(You have {time_limit:.0f} seconds to choose.)")
 
         start = time.time()
-        command = input("enter a command> ").lower()
+        command = input("enter a command> ").strip().lower()
         elapsed = time.time() - start
 
         if elapsed > time_limit:
@@ -49,7 +49,7 @@ What door will you choose? (Type your door choice or a command like 'look' or 'h
         print(f"(You have {time_limit:.0f} seconds to choose.)")
 
         start = time.time()
-        command = input("enter a command> ").lower()
+        command = input("enter a command> ").strip().lower()
         elapsed = time.time() - start
 
         if elapsed > time_limit:
@@ -84,7 +84,7 @@ What door will you choose? (Type your door choice or a command like 'look' or 'h
         print(f"(You have {time_limit:.0f} seconds to choose.)")
 
         start = time.time()
-        command = input("enter a command> ").lower()
+        command = input("enter a command> ").strip().lower()
         elapsed = time.time() - start
 
         if elapsed > time_limit:
@@ -119,7 +119,7 @@ What door will you choose? (Type your door choice or a command like 'look' or 'h
         print(f"(You have {time_limit:.0f} seconds to choose.)")
 
         start = time.time()
-        command = input("enter a command> ").lower()
+        command = input("enter a command> ").strip().lower()
         elapsed = time.time() - start
 
         if elapsed > time_limit:
@@ -152,7 +152,7 @@ What chest will you choose? (Type your chest choice or a command like 'look' or 
         print(f"(You have {time_limit:.0f} seconds to choose.)")
 
         start = time.time()
-        command = input("enter a command> ").lower()
+        command = input("enter a command> ").strip().lower()
         elapsed = time.time() - start
 
         if elapsed > time_limit:

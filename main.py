@@ -24,7 +24,7 @@ What door will you choose? (Type a command like 'exit', 'danger', 'look', or 'he
             print("Commands: 'exit', 'danger', 'look', 'help'")
             
         elif command == "look":
-            print("You are in an empty room with two doors labled 'Exit' and 'Danger'.")
+            print("You are in an empty room with two doors labeled 'Exit' and 'Danger'.")
             
         elif command == "exit":
             print("A wise choice! You safely exit and win the game! Congratulations big brain!")

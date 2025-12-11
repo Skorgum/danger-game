@@ -39,7 +39,7 @@ What door will you choose? (Type your door choice or a command like 'look' or 'h
 
 def second_room(time_limit):
     print("""Congratulations big brain, you made it to the next room!
-The door slams behind you. This room is slightly larger than the one before, with 4 doors labeled 'one' through 'four.
+The door slams behind you. This room is slightly larger than the one before, with 4 doors labeled 'one' through 'four'.
 What door will you choose? (Type your door choice or a command like 'look' or 'help'.)
 """)
 
